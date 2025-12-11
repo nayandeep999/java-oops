@@ -24,6 +24,7 @@ class Transaction {
 
 } // giving controlled access to the private fields
 // Encapsulation is a way to secure the data, giving them controlled access to them
+// Encapsulation is a way to bind the data together
 
 public class EncapedClass {
 
