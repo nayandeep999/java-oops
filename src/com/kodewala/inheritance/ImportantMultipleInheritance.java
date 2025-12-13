@@ -24,6 +24,11 @@ public class ImportantMultipleInheritance {
 
 // chat-gpt link - https://chatgpt.com/share/693baf88-81d4-8011-b331-831b933c4985
 
+// Inheritance allows a class to reuse the properties and behavior of another class.
+// It helps reduce code duplication and supports code re-usability.
+// In Java, inheritance is achieved using the extends keyword.
+// The child class can use the parent class’s fields and methods and can also add its own behavior.
+
 //Disadvantage of multi-level inheritance if have multiple child like 9 or 10
 //1 loading all the classes (every-time you create a object will result in multiple copy inside heap)
 // 2 if something change in your super class your child class will get impacted and it breaks

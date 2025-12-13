@@ -23,8 +23,11 @@ class Transaction {
 	}
 
 } // giving controlled access to the private fields
-// Encapsulation is a way to secure the data, giving them controlled access to them
-// Encapsulation is a way to bind the data together
+/*
+ * Encapsulation means keeping data secure by allowing controlled access through
+ * methods, This is achieved by making fields private and using getters and
+ * setters. It helps protect the data and prevent unwanted changes.
+ */
 
 public class EncapedClass {
 
