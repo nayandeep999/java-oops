@@ -34,4 +34,12 @@ public class CompVsRunTime {
 
 	}
 
+	// Whatever you can access depends on the reference type not the object type
+	// Meaning while a parent class is referencing an object of child class
+	// compiler just checks if the method that the object is calling is present
+	// on the parent class (reference type or not) because child have access to all
+	// the fields and methods of the parent class (during compile time)
+	// Netbanking nb = new AxisNetbanking();
+	// nb.doNetbanking();
+
 }
