@@ -27,7 +27,8 @@ public class advOfUsingParentRef {
 	/// behave differently at runtime.
 
 	public static void main(String[] args) {
-		Parentxx p; // parent reference, no object yet
+		Parentxx p; // parent reference, no object yet // LOOSE COUPLING
+		// because this variable can now point to any child object
 
 		p = new Child1(); // point to Child1
 		p.show(); // Child1.show()
@@ -41,11 +42,11 @@ public class advOfUsingParentRef {
 		/// You can't do with child reference
 
 		Child1 c1 = new Child1();
-		c1.show(); // Child1.show()
+		c1.show(); // Child1.show() // TIGHTLY COUPLED because c1 is locked to Child1 type
 
 		// c1 = new Child2(); // can't do this, comiple-time error
 		// c1.show() // XXX
-		// c is locked to Child1 type
+		// c1 is locked to Child1 type
 		// Cannot point to Child2 because it’s not a sub-type of Child1
 		// No runtime substitution → no poly-morphism
 
