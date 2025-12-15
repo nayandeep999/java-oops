@@ -16,9 +16,14 @@ public class ProcessPayment {
 		CoreBanking upi = new UPI();
 		CoreBanking cc = new CreditCard();
 
-		processPayment(nb);
+		processPayment(nb); // Parent type reference is pointing to multiple child objects overtime
 		processPayment(upi);
 		processPayment(cc);
+
+		// if poly-morphism does not exist then i have to create multiple
+		// processPayment() methods with different parameters of the child type
+		// processPayment(NetBanking nb), processPayment(UPI upi),
+		// processPayment(CreditCard cc)
 
 	}
 }
