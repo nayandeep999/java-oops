@@ -25,5 +25,11 @@ public class ProcessPayment {
 		// processPayment(NetBanking nb), processPayment(UPI upi),
 		// processPayment(CreditCard cc)
 
+		// based on the actual object type java calls the method, this decision is taken
+		// during runtime
+
+		// Access should be wider not more restrictive, because some class make it
+		// private then jvm can't execute it
+
 	}
 }
