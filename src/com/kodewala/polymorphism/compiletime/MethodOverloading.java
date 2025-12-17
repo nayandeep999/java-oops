@@ -1,11 +1,14 @@
 package com.kodewala.polymorphism.compiletime;
 
-class Sum { // Method Overloading happens within the same class
+class Sum { // Method Overloading happens within the same class , its like valid duplicates
 
 	public double addNum(double a, int b) {
 		System.out.println(a + b);
 		return (a + b);
 	}
+
+	// depending on the data/ availability of data we call the respective method
+	// giving flexibility to the caller
 
 //	public void addTwoNum(int a, double b) {
 //		System.out.println(a + b); ambiguous
@@ -47,12 +50,13 @@ public class MethodOverloading {
 		Sum s1 = new Sum();
 		// s1.addTwoNum(100, 100); //ambiguous due to widening
 
-		s1.addNum(100, 100); // java determines which method to call based on number of parameters
+		s1.addNum(100, 100); // java determines which method to call based on number/type or order of
+								// parameters
 		s1.addNum(100, 100, 100); // its call compile time / static polymer-phism
 
 		// or Method Overloading - Multiple methods with same name in the same class
 		// but different types, different parameters, order of parameters , return types
-		// (can be same)
+		// (can be same) & access modifiers can be same or different
 
 		s1.printArgs(0, "Hello");
 		s1.printArgs("Hello", 0);
