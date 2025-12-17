@@ -36,6 +36,7 @@ public class ConstructorOverloading {
 		// Depending upon the number of subjects you pass
 		// compiler will decide which constructor to call
 		// actual call happens during runtime
+		// only decision taken during the compile time
 	}
 
 }
