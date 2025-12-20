@@ -19,6 +19,10 @@ public class HowToHaveMultiplePublicClasses { // define nested public classes
 		public void doFundTransfer() {
 			System.out.println("UPI.doFundTransfer()");
 		}
+
+		public void upiSpecificMethod() {
+			System.out.println("UPI.upiSpecificMethod()");
+		}
 	}
 
 	public class CreditCard extends CoreBanking {

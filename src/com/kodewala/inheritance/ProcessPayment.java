@@ -13,6 +13,17 @@ public class ProcessPayment {
 		HowToHaveMultiplePublicClasses h = new HowToHaveMultiplePublicClasses();
 		HowToHaveMultiplePublicClasses.CoreBanking upi = h.new UPI();
 		doPayment(upi);
+
+		// upi.upiSpecificMethod() -> this method does not exist on CoreBanking
+		// reference
+		HowToHaveMultiplePublicClasses.UPI upix = h.new UPI();
+		upix.upiSpecificMethod(); // now you can call this because this exists on UPI reference
+
+		// DOWNCASTING - Using the SAME object 'upi'
+		// This (UPI) syntax is the "Cast" operator. No 'new' keyword!
+		HowToHaveMultiplePublicClasses.UPI upiX = (HowToHaveMultiplePublicClasses.UPI) upi;
+		upiX.upiSpecificMethod();
+
 	}
 
 }
