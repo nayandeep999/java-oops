@@ -28,17 +28,16 @@ public class StaticMethodHiding {
 
 	public static void main(String[] args) {
 
-		Parent p = new Child();
-		p.stupidStaticMethod(); // static method belongs to reference type, we can still access parents static
-								// method
+		Parent p = new Child(); // static method belongs to reference type, we can still access parents static
+		p.stupidStaticMethod(); // method
 
-		Child c = new Child();
-		c.stupidStaticMethod(); // ahhh..
+		Child c = new Child(); // Its method hiding, because parents static method is hidden
+		c.stupidStaticMethod(); // & we can still access the parents static method
 
 		System.out.println("---------------------------------");
 
 		p.nonStaticMethod(); // no way child can access the original non static method in parent class
-		c.nonStaticMethod(); // lol..
+		c.nonStaticMethod(); // its completely replaced my the overridden method
 
 	}
 
