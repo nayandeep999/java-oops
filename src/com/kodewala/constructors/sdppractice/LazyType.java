@@ -6,9 +6,13 @@ class Lazy {
 		System.out.println("Instance Created");
 	}
 
-	private static Lazy lz = new Lazy();
+	private static Lazy lz;
 
 	public static Lazy getInstance() {
+		if (lz == null) {
+			lz = new Lazy();
+			return lz;
+		}
 		return lz;
 	}
 }
