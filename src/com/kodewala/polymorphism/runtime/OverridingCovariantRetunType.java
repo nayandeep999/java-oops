@@ -32,7 +32,7 @@ public class OverridingCovariantRetunType {
 		User user = service.getUser(); // since service reference returns User type thats why compiler expects User
 										// type
 		System.out.println(user.getClass());
-		System.out.println(user.role);
+		System.out.println(user.role); // fields belong to reference type so that we can access parent's fields
 
 	}
 
