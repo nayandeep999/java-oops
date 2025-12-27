@@ -31,9 +31,10 @@ public class CoVariantReturnType {
 		CPU i5 = new IntelI5();
 
 		c = runCPU(c);
-		i5 = runCPU(i5);
+		i5 = runCPU(i5); // since runCPU is returning a CPU reference type during compilation thats we
+		// can store this in a i5 (CPU) reference
 
-		((IntelI5) i5).doI5Specific(); // down-casting
+		((IntelI5) i5).doI5Specific(); // down-casting CPU to Inteli5
 
 	}
 
