@@ -12,7 +12,8 @@ class Parent {
 
 class Child extends Parent {
 
-	// Method Overriding -> Static Method Hiding , We can still access both the
+	// Method Overriding -> Static Method Hiding , We (child object) can still
+	// access both the
 	// static methods based on reference type
 	public static void stupidStaticMethod() {
 		System.out.println("Child.stupidStaticMethod()");
@@ -28,11 +29,11 @@ public class StaticMethodHiding {
 
 	public static void main(String[] args) {
 
-		Parent p = new Child(); // static method belongs to reference type, we can still access parents static
-		p.stupidStaticMethod(); // method
+		Parent p = new Child(); // static method belongs to reference type,
+		p.stupidStaticMethod(); // we (child object) can still access parents static method
 
 		Child c = new Child(); // Its method hiding, because parents static method is hidden
-		c.stupidStaticMethod(); // & we can still access the parents static method
+		c.stupidStaticMethod(); // & child object can still access the parents static method
 
 		System.out.println("---------------------------------");
 
