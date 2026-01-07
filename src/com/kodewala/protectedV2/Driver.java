@@ -13,5 +13,7 @@ public class Driver {
 		// Done now you can call
 
 		gc.protectedMethod();
+
+		// Protected is like default PLUS subclass access across packages
 	}
 }

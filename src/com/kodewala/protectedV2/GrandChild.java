@@ -5,6 +5,6 @@ import com.kodewala.protectedV1.Parent;
 public class GrandChild extends Parent {
 	@Override
 	public void protectedMethod() {
-		super.protectedMethod();
+		super.protectedMethod(); // Protected is like default PLUS subclass access across packages
 	}
 }
